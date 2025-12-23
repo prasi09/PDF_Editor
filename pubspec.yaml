@@ -1,0 +1,48 @@
+name: pdf_toolbox
+description: A simple Flutter PDF editor (merge, split, compress)
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core PDF manipulation
+  syncfusion_flutter_pdf: 27.2.5
+
+  # Optional viewer (to quickly preview results)
+  syncfusion_flutter_pdfviewer: ^27.1.52
+
+  # File picking & opening
+  file_picker: ^8.0.6
+  open_filex: ^4.5.0
+
+  image_picker: ^1.0.7   # for selecting images
+
+  # Paths for saving files
+  path_provider: ^2.1.4
+
+  # For PDF creation
+  pdf: ^3.11.0
+  printing: ^5.13.1
+
+  # For drag & drop reordering UI
+  reorderables: ^0.6.0
+
+  # (Optional) For better UI elements
+  flutter_staggered_grid_view: ^0.7.0
+
+  # (Optional) Android-only stronger compression
+  # Uncomment if you want to try it and you’re targeting Android
+  # pdf_compressor: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
